@@ -1,0 +1,61 @@
+
+/* Formulário de autenticação */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: 22px;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-grupo label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-grupo input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #eee5dc;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-grupo input:focus {
+    border-color: #e85d35;
+    box-shadow: 0 0 0 3px rgba(232, 93, 53, 0.12);
+}
+
+.formulario button[type="submit"] {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.termos-conteudo {
+    margin-top: 10px;
+    padding: 12px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.6;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.termos-conteudo h4 {
+    margin: 0 0 8px;
+    font-size: 13px;
+}
+
+.termos-conteudo p {
+    margin: 0;
+}
