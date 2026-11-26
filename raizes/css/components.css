@@ -1,0 +1,196 @@
+/* Marca */
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+    color: #242424;
+    font-size: 21px;
+    font-weight: 850;
+    letter-spacing: -.8px;
+}
+
+.brand-mark {
+    width: 230px;
+    height: 34px;
+    border-radius: 11px;
+    background: orange;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+}
+
+.brand-mark-dois {
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+    background: #e85d35;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+}
+
+
+.apresentacao {
+    font-size: 10px;
+    font-weight: 850;
+    letter-spacing: 1.7px;
+    color: #e85d35;
+}
+
+/* BOTÃOS */
+button,input,select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.botao-primario,.botao-luz {
+    border: 0;
+    border-radius: 12px;
+    background: #cf4824;
+    color: white;
+    font-weight: 750;
+    padding: 13px 19px;
+    box-shadow: 0 7px 18px #e85d3533;
+    transition: background 0.3s ease;
+}
+
+.botao-luz {
+    background: white;
+    color: #242424;
+    box-shadow: none;
+    padding: 10px 16px;
+    font-size: 13px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.botao-luz:hover {
+    background: #23865b;
+    color: white;
+}
+
+.botao-primario span {
+    margin-left: 15px;
+}
+.botao-primario:hover {
+    background: black;
+}
+
+.outline-botao {
+    border: 1px solid #e85d35;
+    color: #e85d35;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 13px;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+
+/*Contador do carrinho */
+.contador {
+    background: #e85d35;;
+    color: white;
+    border-radius: 99px;
+    padding: 1px 6px;
+    font-size: 11px;
+}
+
+/*Avatar conta */
+.avatar {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+}
+
+.icone-botao,.avatar {
+    border: 0;
+    background: #fff8f0;
+    border-radius: 12px;
+    padding: 9px 12px;
+    color: #242424;
+}
+
+
+.luz {
+    color: #ffc09f;
+}
+
+.promo-emoji {
+    font-size: 100px;
+    transform: rotate(-12deg);
+    margin-right: 8%;
+}
+
+/* Modal do site */
+
+
+.modal {
+    background: white;
+    border-radius: 20px;
+    width: min(100%,490px);
+    max-height: 90vh;
+    overflow: auto;
+    padding: 27px;
+    position: relative;
+    box-shadow: 0 25px 80px #0003;
+
+}
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border: 0;
+    background: #f6f1ec;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    font-size: 22px;
+}
+.modal h2 {
+    font-size: 23px;
+    margin: 3px 35px 7px 0;
+}
+.modal .muted {
+    margin-bottom: 19px;
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: #211a16a8;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+    z-index: 10;
+
+}
+
+/* Mensagem do toast */
+.toast {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%,20px);
+    opacity: 0;
+    pointer-events: none;
+    background: #282522;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 10px;
+    font-size: 13px;
+    z-index: 20;
+    transition: .25s;
+    max-width: 90%;
+    text-align: center;
+}
+.toast.show {
+    opacity: 1;
+    transform: translate(-50%,0);
+}
